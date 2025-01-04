@@ -108,11 +108,11 @@ import lpc_bottle_n_review from "./perfume_B01H6EBRNQ_bottle_sort_with_refe_n.js
 
 
 
-const categories = ["Earphone","Humidifier","Ricecooker","Perfume"] as const;
+const categories = ["Ricecooker","Perfume"] as const;
 const products = {
   // "Earphone": ["JBL Noise Cancelling Headphones"],
-  "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
-  "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
+  // "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
+  // "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
   "Ricecooker":["pars ricecooker","Kitalma ricecooker",],
   "Perfume":["CLEAN perfume","Belcam perfume"]
 } as const;
