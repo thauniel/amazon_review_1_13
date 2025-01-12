@@ -63,6 +63,15 @@ import rc_product_p_review from "./ricecooker_B08GCS4T2F_product_sort_with_refe_
 import rc_product_n_review from "./ricecooker_B08GCS4T2F_product_sort_with_refe_n.json"
 import rc_lid_p_review from "./ricecooker_B08GCS4T2F_lid_sort_with_refe_p.json"
 import rc_lid_n_review from "./ricecooker_B08GCS4T2F_lid_sort_with_refe_n.json"
+import src_cooker_p_review from "./ricecooker_B000MAERM0_cooker_sort_with_refe_p.json"
+import src_cooker_n_review from "./ricecooker_B000MAERM0_cooker_sort_with_refe_n.json"
+import src_rice_p_review from "./ricecooker_B000MAERM0_rice_sort_with_refe_p.json"
+import src_rice_n_review from "./ricecooker_B000MAERM0_rice_sort_with_refe_n.json"
+import src_lid_p_review from "./ricecooker_B000MAERM0_lid_sort_with_refe_p.json"
+import src_lid_n_review from "./ricecooker_B000MAERM0_lid_sort_with_refe_n.json"
+import src_cups_p_review from "./ricecooker_B000MAERM0_cups_sort_with_refe_p.json"
+import src_cups_n_review from "./ricecooker_B000MAERM0_cups_sort_with_refe_n.json"
+
 import lrc_rice_p_review from "./ricecooker_B07BSNG263_rice_sort_with_refe_p.json"
 import lrc_rice_n_review from "./ricecooker_B07BSNG263_rice_sort_with_refe_n.json"
 import lrc_water_p_review from "./ricecooker_B07BSNG263_water_sort_with_refe_p.json"
@@ -103,18 +112,44 @@ import lpc_scent_p_review from "./perfume_B00CTS08GC_scent_sort_with_refe_p.json
 import lpc_scent_n_review from "./perfume_B00CTS08GC_scent_sort_with_refe_n.json"
 import lpc_bottle_p_review from "./perfume_B01H6EBRNQ_bottle_sort_with_refe_p.json"
 import lpc_bottle_n_review from "./perfume_B01H6EBRNQ_bottle_sort_with_refe_n.json"
+import vac_size_p_review from "./B08PYXYDWX_size_sort_with_refe_p.json"
+import vac_size_n_review from "./B08PYXYDWX_size_sort_with_refe_n.json"
+import vac_product_p_review from "./B08PYXYDWX_product_sort_with_refe_p.json"
+import vac_product_n_review from "./B08PYXYDWX_product_sort_with_refe_n.json"
+import vac_vacuum_p_review from "./B08PYXYDWX_vacuum_sort_with_refe_p.json"
+import vac_vacuum_n_review from "./B08PYXYDWX_vacuum_sort_with_refe_n.json"
+import vac_floor_p_review from "./B08PYXYDWX_floor_sort_with_refe_p.json"
+import vac_floor_n_review from "./B08PYXYDWX_floor_sort_with_refe_n.json"
+import vac_AC_p_review from "./B08PYXYDWX_AC_sort_with_refe_p.json"
+import vac_AC_n_review from "./B08PYXYDWX_AC_sort_with_refe_n.json"
+import vac_suction_p_review from "./B08PYXYDWX_suction_sort_with_refe_p.json"
+import vac_suction_n_review from "./B08PYXYDWX_suction_sort_with_refe_n.json"
+import vac_dust_p_review from "./B08PYXYDWX_dust_sort_with_refe_p.json"
+import vac_dust_n_review from "./B08PYXYDWX_dust_sort_with_refe_n.json"
+import vac_car_p_review from "./B08PYXYDWX_car_sort_with_refe_p.json"
+import vac_car_n_review from "./B08PYXYDWX_car_sort_with_refe_n.json"
+import v_vacuum_p_review from "./vacuum_B0BJJHYNLN_vacuum_sort_with_refe_p.json"
+import v_vacuum_n_review from "./vacuum_B0BJJHYNLN_vacuum_sort_with_refe_n.json"
+import v_car_p_review from "./vacuum_B0BJJHYNLN_car_sort_with_refe_p.json"
+import v_car_n_review from "./vacuum_B0BJJHYNLN_car_sort_with_refe_n.json"
+import v_dirt_p_review from "./vacuum_B0BJJHYNLN_dirt_sort_with_refe_p.json"
+import v_dirt_n_review from "./vacuum_B0BJJHYNLN_dirt_sort_with_refe_n.json"
+import v_plastic_p_review from "./vacuum_B0BJJHYNLN_plastic_sort_with_refe_p.json"
+import v_plastic_n_review from "./vacuum_B0BJJHYNLN_plastic_sort_with_refe_n.json"
 // import Modal from "react-modal"
 
 
 
 
-const categories = ["Ricecooker","Perfume"] as const;
+const categories = ["Ricecooker","Vacuum"] as const;
 const products = {
   // "Earphone": ["JBL Noise Cancelling Headphones"],
   // "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
   // "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
-  "Ricecooker":["pars ricecooker","Kitalma ricecooker",],
-  "Perfume":["CLEAN perfume","Belcam perfume"]
+  // "Ricecooker":["pars ricecooker","Kitalma ricecooker","ZojirushiTGC10 ricecooker"],
+  "Ricecooker":["ZojirushiTGC10 ricecooker"],
+  "Perfume":["CLEAN Perfume","Belcam Perfume"],
+  "Vacuum":["VacLife EV-H066 Vacuum","WANTERONG Hand Held Vacuum"]
 } as const;
 
 const reviews = {
@@ -665,50 +700,50 @@ export function ProductReviewsComponent() {
             </button>
             </div> )}
 
-            {showDetails&&selectedProduct === 'Kitalma ricecooker' &&(
+            {showDetails&&selectedProduct === 'ZojirushiTGC10 ricecooker' &&(
             <div>
+
+              <button className="rounded-full py-2 px-4 bg-red-500 text-white"
+                  title='positive:61 negative:0'
+                  onClick={() => {
+                    buttonClick('rice',true);
+                    Reviews(src_rice_p_review.reviews,src_rice_n_review.reviews);
+                    handleReviewshow(src_rice_p_review.reviews,src_rice_p_review.reference,src_rice_n_review.reviews,src_rice_n_review.reference);
+                  }}>
+                  rice
+              </button>
 
               <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
                   
-                  title='positive:9 negative:3'
+                  title='positive:9 negative:0'
                   onClick={() => {
-                    buttonClick('product',true);
-                    Reviews(rc_product_p_review.reviews,rc_product_n_review.reviews)
-                    handleReviewshow(rc_product_p_review.reviews,rc_product_p_review.reference,rc_product_n_review.reviews,rc_product_n_review.reference);
+                    buttonClick('cooker',true);
+                    Reviews(src_cooker_p_review.reviews,src_cooker_n_review.reviews)
+                    handleReviewshow(src_cooker_p_review.reviews,src_cooker_p_review.reference,src_cooker_n_review.reviews,src_cooker_n_review.reference);
                   }}>
-                  product
-              </button>
-              <button className="rounded-full py-2 px-4 bg-red-500 text-white"
-             
-                title='positive:1 negative:0'
-                onClick={() => {
-                  buttonClick('cooking',true);
-                  Reviews(rc_cooking_p_review.reviews,rc_cooking_n_review.reviews);
-                  handleReviewshow(rc_cooking_p_review.reviews,rc_cooking_p_review.reference,rc_cooking_n_review.reviews,rc_cooking_n_review.reference);
-                }}>
-                cooker
+                  cooker
               </button>
 
-              <button className="rounded-full py-2 px-4 bg-blue-500 text-white" 
+              <button className="rounded-full py-2 px-4  text-white bg-red-500" 
         
-                title='positive:1 negative:2'
+                title='positive:4 negative:0'
                 onClick={() => {
-                  buttonClick('lid',true);
-                  Reviews(rc_lid_p_review.reviews,rc_lid_n_review.reviews)
-                  handleReviewshow(rc_lid_p_review.reviews,rc_lid_p_review.reference,rc_lid_n_review.reviews,rc_lid_n_review.reference);
+                  buttonClick('cups',true);
+                  Reviews(src_cups_p_review.reviews,src_cups_n_review.reviews)
+                  handleReviewshow(src_cups_p_review.reviews,src_cups_p_review.reference,src_cups_n_review.reviews,src_cups_n_review.reference);
                 }}>
-                lid
+                cups
               </button>
 
               <button className="rounded-full py-2 px-4  text-black" 
         
                 title='positive:5 negative:4'
                 onClick={() => {
-                  buttonClick('bacon',true);
-                  Reviews(rc_bacon_p_review.reviews,rc_bacon_n_review.reviews)
-                  handleReviewshow(rc_bacon_p_review.reviews,rc_bacon_p_review.reference,rc_bacon_n_review.reviews,rc_bacon_n_review.reference);
+                  buttonClick('lid',true);
+                  Reviews(src_lid_p_review.reviews,src_lid_n_review.reviews)
+                  handleReviewshow(src_lid_p_review.reviews,src_lid_p_review.reference,src_lid_n_review.reviews,src_lid_n_review.reference);
                 }}>
-                bacon
+                lid
               </button>
 
         </div>)}
@@ -953,9 +988,142 @@ export function ProductReviewsComponent() {
               >
                money
               </button>
-
-
             </div> )}
+            {showDetails&&selectedProduct === 'VacLife EV-H066 Vacuum' &&(
+          <div>
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white"
+              title='positive:120 negative:9'
+            
+              onClick={() => {
+                buttonClick('vacuum',true);
+                Reviews(vac_vacuum_p_review.reviews,vac_vacuum_n_review.reviews)
+                handleReviewshow(vac_vacuum_p_review.reviews,vac_vacuum_p_review.reference,vac_vacuum_n_review.reviews,vac_vacuum_n_review.reference);
+              }}>
+                vacuum
+            </button>
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+     
+              title='positive:71 negative:14'
+              onClick={() => {
+                buttonClick('suction',true);
+                Reviews(vac_suction_p_review.reviews,vac_suction_n_review.reviews)
+                handleReviewshow(vac_suction_p_review.reviews,vac_suction_p_review.reference,vac_suction_n_review.reviews,vac_suction_n_review.reference);
+              }}>
+                suction
+            </button>
+
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+              title='positive:70 negative:7'
+                onClick={() => {
+                buttonClick('car',true);
+                Reviews(vac_car_p_review.reviews,vac_car_n_review.reviews)
+                handleReviewshow(vac_car_p_review.reviews,vac_car_p_review.reference,vac_car_n_review.reviews,vac_car_n_review.reference);
+                }}>
+                car
+              </button>
+
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+              title='positive:31 negative:5'
+              onClick={() => {
+                buttonClick('product',true);
+                Reviews(vac_product_p_review.reviews,vac_product_n_review.reviews)
+                handleReviewshow(vac_product_p_review.reviews,vac_product_p_review.reference,vac_product_n_review.reviews,vac_product_n_review.reference);
+              }}>
+                product
+            </button>
+
+            <button 
+              className="rounded-full py-2 px-4 bg-red-500 text-white" 
+              title='positive:19 negative:1'
+              onClick={() => {
+              buttonClick('size',true);
+              Reviews(vac_size_p_review.reviews,vac_size_n_review.reviews)
+              handleReviewshow(vac_size_p_review.reviews,vac_size_p_review.reference,vac_size_n_review.reviews,vac_size_n_review.reference);
+              }}>
+               size
+            </button>
+            <button 
+              className="rounded-full py-2 px-4 bg-red-500 text-white" 
+           
+              title='positive:12 negative:4'
+              onClick={() => {
+                buttonClick('dust',true);
+                Reviews(vac_dust_p_review.reviews,vac_dust_n_review.reviews)
+                handleReviewshow(vac_dust_p_review.reviews,vac_dust_p_review.reference,vac_dust_n_review.reviews,vac_dust_n_review.reference);
+              }}>
+              dust
+            </button>
+
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+      
+              title='positive:5 negative:2'
+              onClick={() => {
+                buttonClick('floor',true);
+                Reviews(vac_floor_p_review.reviews,vac_floor_n_review.reviews)
+                handleReviewshow(vac_floor_p_review.reviews,vac_floor_p_review.reference,vac_floor_n_review.reviews,vac_floor_n_review.reference);
+              }}>
+                floor
+            </button>
+            
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+         
+              title='positive:4 negative:2'
+              onClick={() => {
+                buttonClick('AC',true);
+                Reviews(vac_AC_p_review.reviews,vac_AC_n_review.reviews)
+                handleReviewshow(vac_AC_p_review.reviews,vac_AC_p_review.reference,vac_AC_n_review.reviews,vac_AC_n_review.reference);
+              }}>
+                AC
+            </button>
+
+          </div>
+          )}
+          {showDetails&&selectedProduct === 'WANTERONG Hand Held Vacuum' &&(
+            <div>
+
+              <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+                  title='positive:70 negative:7'
+                  onClick={() => {
+                    buttonClick('vac',true);
+                    Reviews(vac_car_p_review.reviews,vac_car_n_review.reviews)
+                    handleReviewshow(vac_car_p_review.reviews,vac_car_p_review.reference,vac_car_n_review.reviews,vac_car_n_review.reference);
+                  }}>
+                  vac
+              </button>
+              <button className="rounded-full py-2 px-4 bg-red-500 text-white"
+             
+                title='positive:21 negative:2'
+                onClick={() => {
+                  buttonClick('vacuum',true);
+                  Reviews(v_vacuum_p_review.reviews,v_vacuum_n_review.reviews);
+                  handleReviewshow(v_vacuum_p_review.reviews,v_vacuum_p_review.reference,v_vacuum_n_review.reviews,v_vacuum_n_review.reference);
+                }}>
+                vacuum
+              </button>
+
+              <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+        
+                title='positive:8 negative:1'
+                onClick={() => {
+                  buttonClick('dirt',true);
+                  Reviews(v_dirt_p_review.reviews,v_dirt_n_review.reviews)
+                  handleReviewshow(v_dirt_p_review.reviews,v_dirt_p_review.reference,v_dirt_n_review.reviews,v_dirt_n_review.reference);
+                }}>
+                dirt
+              </button>
+
+              <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
+        
+                title='positive:1 negative:0'
+                onClick={() => {
+                  buttonClick('plastic',true);
+                  Reviews(v_plastic_p_review.reviews,v_plastic_n_review.reviews)
+                  handleReviewshow(v_plastic_p_review.reviews,v_plastic_p_review.reference,v_plastic_n_review.reviews,v_plastic_n_review.reference);
+                }}>
+                plastic
+              </button>
+
+        </div>)}
       </div>
 
       {showDetails&&ClickReceive&&
@@ -1004,7 +1172,6 @@ export function ProductReviewsComponent() {
               </div>
       
             ))}
-          
           </div>
           </ScrollArea>
           <ScrollArea className="border border-blue-500 rounded-lg shadow-lg h-[600px] w-1/2 p-4">
