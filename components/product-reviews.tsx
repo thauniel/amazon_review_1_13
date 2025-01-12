@@ -1074,13 +1074,13 @@ export function ProductReviewsComponent() {
             <div>
 
               <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
-                  title='positive:70 negative:7'
+                  title='positive:30 negative:3'
                   onClick={() => {
-                    buttonClick('vac',true);
-                    Reviews(vac_car_p_review.reviews,vac_car_n_review.reviews)
-                    handleReviewshow(vac_car_p_review.reviews,vac_car_p_review.reference,vac_car_n_review.reviews,vac_car_n_review.reference);
+                    buttonClick('car',true);
+                    Reviews(v_car_p_review.reviews,v_car_n_review.reviews)
+                    handleReviewshow(v_car_p_review.reviews,v_car_p_review.reference,v_car_n_review.reviews,v_car_n_review.reference);
                   }}>
-                  vac
+                  car
               </button>
               <button className="rounded-full py-2 px-4 bg-red-500 text-white"
              
