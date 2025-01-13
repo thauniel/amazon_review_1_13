@@ -145,6 +145,18 @@ const products = {
 } as const;
 
 const reviews = {
+   "ZojirushiTGC10 ricecooker":{
+    positive: "This Zojirushi rice cooker is a compact and versatile kitchen essential. Its fuzzy logic technology ensures perfect rice every time, from brown to white rice. The timer and keep-warm features add convenience, while the retractable cord saves space. Easy to clean, it’s ideal for cooking porridge, oatmeal, and even creative recipes like Spanish rice. A highly recommended, reliable, and space-saving addition to any kitchen!",
+    negative: "After cooking the first pot of rice, the underside of the lid behind the top plate had already become discolored"
+  },
+  "VacLife EV-H066 Vacuum":{
+   positive:"This compact vacuum offers powerful suction and a sleek design, making it ideal for quick cleaning tasks around the office or car. With handy attachments and extra filters included, it's perfect for small debris like crumbs and dust. While it may not handle larger tasks like spider webs or heavy debris, it's an excellent choice for light cleaning and quick jobs.",
+   negative:"This vacuum may require frequent emptying due to its small capacity, and its suction power is not strong enough for larger debris. The bristles tend to clog easily, making it difficult to clean. Additionally, it’s prone to tipping over, causing spills. Overall, it may not be ideal for heavy-duty cleaning or larger messes."
+  },
+  "WANTERONG Hand Held Vacuum":{
+    positive:"The WANTERONG Handheld Vacuum offers great suction power in a compact and portable design, making it ideal for quick cleaning jobs in your car and around the home. While it has medium build quality, it’s an excellent, affordable option for tackling dirt and pet hair with ease.",
+    negative:"This handheld vacuum has weak suction, making it suitable only for light surface cleanup. It struggles with deeper debris and is not effective for thorough cleaning. The vacuum head attachment has limited capacity, causing it to miss larger particles, and the flap inside the canister can easily become dislodged if the hose attachment is pushed in too far. Overall, it is not ideal for anything beyond basic, light tasks."
+  },
   "JBL Noise Cancelling Headphones": {
     positive: "These earbuds offer decent noise cancelling for some users and consumer-grade sound quality, better than $20headphones but not as good as $150 IEMs. Controls lack volume adjustment by default, but the JBL app enhancesperformance with an adjustable EQ and ambient sound settings. Fit can be a bit trial and error, but once set up,they provide a solid listening experience.",
     negative: "This JBL earbuds' sound quality harsh and metallic, potentially causing hearing loss due to theirhigh-pitched nature. The fit is less comfortable compared to Sony's, with cheaper silicon ear tips that don'tseal well. Volume controls are missing from the earbuds themselves but can be added via an app, though thisremoves noise mode adjustments. Bass response improves with tighter-fitting ear pieces, but active noisecancellation (ANC) remains mediocre. Despite JBL's reputation, these issues significantly impact user satisfaction."
